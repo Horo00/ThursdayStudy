@@ -6,9 +6,9 @@ public class Main {
 
 		ICTEngineer kuramoto = new ICTEngineer(6, "倉本", "女性");
 
-		System.out.println("kawataの先生の名前:" + kawata.name);
+		System.out.println("kawataの名前:" + kawata.name);
 
-		System.out.println("kuramotoの先生の名前:"+kuramoto.name);
+		System.out.println("kuramotoの名前:"+kuramoto.name);
 
 		kawata.question();
 
