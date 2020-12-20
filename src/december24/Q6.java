@@ -7,7 +7,6 @@ public class Q6 {
 		int i = 'a';
 		double d = 010.0f;
 //		boolean b = 0;
-
 		System.out.println(d);
 	}
 }
