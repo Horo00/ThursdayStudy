@@ -1,0 +1,64 @@
+Q1.次の内アクセス修飾子の説明として誤っているものを選びなさい。(１つ選択)
+A.	public修飾子が付いている場合、どのクラスからでもアクセスができる
+B.	private修飾子が付いている場合、継承関係にある別のクラスからでもアクセスができない
+C.	アクセス修飾子が付いていない場合、同じパッケージにあるクラスか継承関係にある別クラスからしかアクセスできない
+D.	protected修飾子が付いている場合、同じパッケージにある別クラスからアクセスができる
+
+→C
+
+Q2.次の内staticに関する説明として正しいものを選びなさい。(１つ選択)
+A.	staticなメンバーはインスタンスに属する
+B.	staticキーワードはfinalキーワードを共に用いることはできない
+C	インスタンス・メンバーからstaticメンバーを参照することはできない
+D	staticメンバーからインスタンス・メンバーを参照することはできない
+
+→D
+
+Q3.次の内エントリーポイントとして実行できるものを選びなさい(１つ選択)
+A.	protected static void main(String[] args){}
+B.	public void main(String[] args){}
+C.	public static int main(String[] args){return 0;}
+D.	public static void sub(String[] args) {}
+E.	public static void main(Object[] args) {}
+F.	public static void main(String[] arguments) {}
+
+→F
+
+Q4.次の内戻り値の説明として正しいものを選びなさい(１つ選択)
+A.	コンストラクタの戻り値はvoidのみ定義できる
+B.	戻り値を戻さないメソッドの場合、明示的にvoidを宣言する必要はない
+C.	void以外の戻り値を宣言した場合、そのメソッド内には少なくとも一つ以上の「return」キーワードが必要となる
+D.	戻り値にvoidを宣言した場合、そのメソッド内で「return」キーワードを使用することはできない
+
+→C
+
+Q5.次の内メソッドの宣言として正しいものを選びなさい（１つ選択）
+A.	void method(String str,int... values) {}	
+B.	void method(String... strings,int val) {}
+C.	void method(String... strings,int... values) {}
+D.	void method(null) {}
+
+→A
+
+Q6.次の内コンパイルエラーになるものを選びなさい（1つ選択)
+A.	char c = 300;
+B.	int i = 'a';
+C.	double d = 010.0f;
+D.	boolean b = 0;
+
+→D
+
+Q.次の内実行すると例外が発生するものを選びなさい。(１つ選択)
+A.	String str = new String();
+	System.out.println(str.length());
+
+B.	String str = new String();
+	System.out.println(str);
+	
+C.	String str = null;
+	System.out.println(str.length());
+	
+D.	String str = null;
+	System.out.println(str);
+	
+→C
