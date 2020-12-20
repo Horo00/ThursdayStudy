@@ -15,7 +15,7 @@ public class StaticTest {
 	}
 
 	static void staticToInstance() {
-		System.out.println(instanceString);
+//		System.out.println(instanceString);
 	}
 
 	static void staticToStatic() {
