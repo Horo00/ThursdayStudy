@@ -14,17 +14,17 @@ D	staticメンバーからインスタンス・メンバーを参照すること
 
 →D
 
-Q3.次の内エントリーポイントとして実行できるものを選びなさい(１つ選択)
+Q3.次の内エントリーポイントとして実行できるものを選びなさい。(１つ選択)
 A.	protected static void main(String[] args){}
 B.	public void main(String[] args){}
 C.	public static int main(String[] args){return 0;}
 D.	public static void sub(String[] args) {}
 E.	public static void main(Object[] args) {}
-F.	public static void main(String[] arguments) {}
+F.	public static void main(String... arguments) {}
 
 →F
 
-Q4.次の内戻り値の説明として正しいものを選びなさい(１つ選択)
+Q4.次の内戻り値の説明として正しいものを選びなさい。(１つ選択)
 A.	コンストラクタの戻り値はvoidのみ定義できる
 B.	戻り値を戻さないメソッドの場合、明示的にvoidを宣言する必要はない
 C.	void以外の戻り値を宣言した場合、そのメソッド内には少なくとも一つ以上の「return」キーワードが必要となる
@@ -32,7 +32,7 @@ D.	戻り値にvoidを宣言した場合、そのメソッド内で「return」�
 
 →C
 
-Q5.次の内メソッドの宣言として正しいものを選びなさい（１つ選択）
+Q5.次の内メソッドの宣言として正しいものを選びなさい。（１つ選択）
 A.	void method(String str,int... values) {}	
 B.	void method(String... strings,int val) {}
 C.	void method(String... strings,int... values) {}
@@ -40,7 +40,7 @@ D.	void method(null) {}
 
 →A
 
-Q6.次の内コンパイルエラーになるものを選びなさい（1つ選択)
+Q6.次の内コンパイルエラーになるものを選びなさい。（１つ選択)
 A.	char c = 300;
 B.	int i = 'a';
 C.	double d = 010.0f;
@@ -48,7 +48,61 @@ D.	boolean b = 0;
 
 →D
 
-Q.次の内実行すると例外が発生するものを選びなさい。(１つ選択)
+Q7.次のプログラムを確認してください。
+public interface Q7Interface {}
+
+public abstract class Q7Abstract {}
+
+上記を使用した以下のプログラムで、コンパイル、実行ができるものを選びなさい。（２つ選択)
+A.	public class Q7 extends Q7Interface {//do something}
+B.	public class Q7 extends Q7Abstract {//do something}
+C.	public class Q7 implements Q7Interface{//do something}
+D.	public class Q7 implements Q7Abstract{//do something}
+
+→B,C
+
+Q8.次の内配列の初期化として正しいものを選びなさい(２つ選択)
+A.	int[][] array = new int[3][3000000000L];
+B.	int[][] array = new int[3][];
+C.	int[][] array = {1,2,3};
+D.	int[][] array;
+	array = {{1,2},{3,4}};
+E.	int []array[] = {{1,2},{4,5}};
+
+→B,E
+
+Q9.次のプログラムをコンパイル、実行したときの結果として、正しいものを選びなさい。(１つ選択)
+public class Main{
+	public static void main(String[] args) {
+		System.out.println(test(null));
+	}
+
+	private static String test(Object object) {
+		try {
+			return object.toString();
+		} catch (Exception e) {
+			return "A";
+		} finally {
+			return "B";
+		}
+	}
+}
+A.	「null」と表示される
+B.	「A」と表示される
+C.	「B」と表示される
+D.	コンパイルエラーになる
+
+→B
+
+Q10.次の内System.out.print()について正しい説明をしているものを選びなさい。(１つ選択)
+A	Systemクラスの内部クラスのoutクラスに存在するprint()メソッドを呼び出している
+B	Systemクラスのstaticフィールドのoutオブジェクトのインスタンスなprint()メソッドを呼び出している
+C	Java SEがコンソールに文字を出力するために提供している特殊な構文である
+D	プリミティブ型の出力には対応していない
+
+→B
+
+Q11.次の内実行すると例外が発生するものを選びなさい。(１つ選択)
 A.	String str = new String();
 	System.out.println(str.length());
 
@@ -62,3 +116,14 @@ D.	String str = null;
 	System.out.println(str);
 	
 →C
+
+Q12.次のプログラムをコンパイル、実行したときの結果として正しいものを選びなさい(１つ選択)
+	LocalDate christmasIb = LocalDate.of(2020,12,24);
+	christmasIb.plusDays(8);
+	System.out.println(christmasIb);
+
+A.	「2020-01-01」が表示される
+B.	「2021-01-01」が表示される
+C.	「2020-12-24」が表示される
+D.	「2020-12-31」が表示される
+
