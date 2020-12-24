@@ -9,4 +9,6 @@ public class Q1 {
 		String str = null;
 		System.out.println(str);
 	}
+
+
 }

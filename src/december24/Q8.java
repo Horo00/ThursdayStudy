@@ -11,7 +11,7 @@ public class Q8 {
 //		int[][] array;
 //		array = {{1,2},{3,4}};
 
-		int []array[] = {{1,2},{3,4}};
+		int []array []= {{1,2},{3,4}};
 
 	}
 }
