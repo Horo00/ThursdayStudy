@@ -12,4 +12,6 @@ public class Q1 {
 		int i = (int)100000000000000l;
 		System.out.println(i);
 	}
+
+
 }
