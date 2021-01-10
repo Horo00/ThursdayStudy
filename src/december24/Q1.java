@@ -8,5 +8,8 @@ public class Q1 {
 		
 		String str = null;
 		System.out.println(str);
+		
+		int i = (int)100000000000000l;
+		System.out.println(i);
 	}
 }
