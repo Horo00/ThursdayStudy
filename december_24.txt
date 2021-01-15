@@ -33,7 +33,7 @@ D.	戻り値にvoidを宣言した場合、そのメソッド内で「return」�
 →C
 
 Q5.次の内メソッドの宣言として正しいものを選びなさい。（１つ選択）
-A.	void method(String str,int... values) {}	
+A.	void method(String str,int... values) {}
 B.	void method(String... strings,int val) {}
 C.	void method(String... strings,int... values) {}
 D.	void method(null) {}
@@ -92,7 +92,7 @@ B.	「A」と表示される
 C.	「B」と表示される
 D.	コンパイルエラーになる
 
-→B
+→C
 
 Q10.次の内System.out.print()について正しい説明をしているものを選びなさい。(１つ選択)
 A	Systemクラスの内部クラスのoutクラスに存在するprint()メソッドを呼び出している
@@ -108,13 +108,13 @@ A.	String str = new String();
 
 B.	String str = new String();
 	System.out.println(str);
-	
+
 C.	String str = null;
 	System.out.println(str.length());
-	
+
 D.	String str = null;
 	System.out.println(str);
-	
+
 →C
 
 Q12.次のプログラムをコンパイル、実行したときの結果として正しいものを選びなさい(１つ選択)
